@@ -1,0 +1,246 @@
+{
+    "Banned": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Pending": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Restricted": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Normal": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Pending + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Restricted + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Normal + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Pending + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Restricted + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Normal + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Pending + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Restricted + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Normal + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Support Team": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Gestion Team": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Support Team + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Gestion Team + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Support Team + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Gestion Team + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Support Team + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Gestion Team + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Support Team": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Gestion Team": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Support Team + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Gestion Team + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Support Team + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Gestion Team + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Support Team + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "BAT + Gestion Team + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Full Perms": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Full Perms + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + BAT": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + BAT + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Gestion Team": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Gestion Team + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Gestion Team + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + BAT + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + BAT + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team + BAT": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team + BAT + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Gestion Team + BAT": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Gestion Team + BAT + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team + BAT + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Support Team + BAT + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Gestion Team + BAT + Tournament Staff": {
+        "Value": 0,
+        "Permissions": []
+    },
+    "Developer + Gestion Team + BAT + Tournament Staff + Donor": {
+        "Value": 0,
+        "Permissions": []
+    }
+}
