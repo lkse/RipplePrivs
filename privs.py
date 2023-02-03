@@ -52,56 +52,22 @@ class Privileges(IntFlag):
 # and to see if a privlige is in a var, we do;
 # var & Privileges.priv
     
-def GetUserPrivs(privilegeint):
-    privilegeslist = []
-    sql = False # because im not locally doing sql
-    if sql:
-        # do sql stuff
-        pass
-    else:
-        try:
-            for name, value in Privileges.__members__.items():
-                if privilegeint & value:
-                    privilegeslist.append(name)
-        finally:
-            print(privilegeslist)
-def GeneratePrivilegeGroup():
-    global permissiongroup
-    global privliges
-    global permissions
-    global permissionsjson
-    if not os.path.exists("./permissions.json"):
-        print("Permissions.json doesn't exist.")
-        raise FileNotFoundError
+def getprivfromint(privint):
+    # Get a list of privs from an integer
+    privs = [priv.name for priv in Privileges if privint & priv]
+    if len(privs) == 0:
+        raise ValueError("No Privileges")
+    print(privs)  
 
-    with open('./permissions.json', 'r') as permissionsjson:
-        permissions = json.load(permissionsjson)
-        if len(permissions.keys()) == 0:
-            print("nothing in permissions.json, ばあーか.")
-            raise ValueError
-        else:
-            print(f'Found {len(permissions.keys())} permission groups in permissions.json')
-    for permissiongroup in permissions.keys():
-        title = f'Select permissions for {permissiongroup}'
-        options = [p.name for p in Privileges.__members__.values()]
-        option = pick.pick(options, title, multiselect=True)
-        option = list(option)
-        print(option)
-        with open('./permissions.json', 'r+') as permissionsjson:
-            permissions = json.load(permissionsjson)
-            permissions[permissiongroup]["Permissions"] = option 
-            json.dump(permissions, permissionsjson, indent=0)
-            GetPrivInt(option)
-def GetPrivInt(PrivilegesList):
-    privilegeint = 0
-    for privilege in PrivilegesList:
-            privilegeint |= Privileges[privilege].value
-    
-
-    permissions[permissiongroup]["Value"] = privilegeint
-    json.dump(permissions, permissionsjson, indent=1)
-    privilegeint = 0
+def getintfrompriv(privs):
+    # Get an integer from a list of privs
+    privint = 0
+    # Convert the list of privs to a list of Privileges
+    privs = [Privileges[priv] for priv in privs]
+    for priv in privs:
+        privint |= priv.value
+    print(privint)
 
 
-
-GeneratePrivilegeGroup() 
+getprivfromint(17179869185)
+getintfrompriv(["PublicUser", "PanelNominateAccept"])
