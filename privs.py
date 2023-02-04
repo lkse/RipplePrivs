@@ -4,7 +4,6 @@
 
 from enum import IntFlag # thing for class
 import json # for putting in permissions.json.
-import os
 import pick
 
 # the class for privliges
@@ -57,7 +56,7 @@ def getprivfromint(privint):
     privs = [priv.name for priv in Privileges if privint & priv]
     if len(privs) == 0:
         raise ValueError("No Privileges")
-    print(privs)  
+    return privs
 
 def getintfrompriv(privs):
     # Get an integer from a list of privs
@@ -66,8 +65,37 @@ def getintfrompriv(privs):
     privs = [Privileges[priv] for priv in privs]
     for priv in privs:
         privint |= priv.value
-    print(privint)
+    return privint
+
+def setprivgroups(): # only for creating groups in permissions.json
+    # get permissions.json
+    with open("permissions.json", "r") as jsonfile:
+        permissions = json.load(jsonfile)
+    # make groups into list
+    permissions = list(permissions.keys())
+    for group in permissions:
+        # use pick to have user select privs
+        title = f'Select permissions for {group}'
+        options = [priv.name for priv in Privileges]
+        selected = pick.pick(options, title, multiselect=True, min_selection_count=1)
+        # parse tuple to list
+        selected = [priv[0] for priv in selected]
+        # get int from privs
+        privint = getintfrompriv(selected)
+        # open json with write perms
+        with open("permissions.json", "r") as f:
+            perm = json.load(f)
+            perm[group]["Value"] = privint
+            perm[group]["Permissions"] = selected
+        # replace json
+        with open("permissions.json", "w") as f:
+            json.dump(perm, f, indent=4)
 
 
-getprivfromint(17179869185)
-getintfrompriv(["PublicUser", "PanelNominateAccept"])
+            
+        
+
+
+setprivgroups()
+
+  
