@@ -91,11 +91,17 @@ def setprivgroups(): # only for creating groups in permissions.json
         with open("permissions.json", "w") as f:
             json.dump(perm, f, indent=4)
 
-
-            
+def createQuery(): # only for creating query for pushing json to db
+    # create a query for pushing json to db
+    with open("permissions.json", "r") as f:
+        j = json.load(f)
+        # delete everything from privileges_groups_new
+        query = "DELETE FROM privileges_groups_new;\n"
+        for group in j.keys():
+            query += "INSERT INTO privileges_groups_new (name, privileges, color) VALUES ('{}', {}, 'default');\n".format(group, str(j[group]["Value"]))
         
+        print(query)
 
 
-setprivgroups()
 
   

@@ -1,246 +1,740 @@
 {
     "Banned": {
         "Value": 0,
-        "Permissions": []
+        "Permissions": [
+            "NoPrivs"
+        ]
     },
     "Pending": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 1048576,
+        "Permissions": [
+            "PendingVerify"
+        ]
     },
     "Restricted": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2,
+        "Permissions": [
+            "NormalUser"
+        ]
     },
     "Normal": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 3,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser"
+        ]
     },
     "Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 4,
+        "Permissions": [
+            "Donor"
+        ]
     },
     "Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2097152,
+        "Permissions": [
+            "TournamentStaff"
+        ]
     },
     "Pending + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 1048580,
+        "Permissions": [
+            "PendingVerify",
+            "Donor"
+        ]
     },
     "Restricted + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 6,
+        "Permissions": [
+            "NormalUser",
+            "Donor"
+        ]
     },
     "Normal + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 7,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor"
+        ]
     },
     "Pending + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 3145728,
+        "Permissions": [
+            "PendingVerify",
+            "TournamentStaff"
+        ]
     },
     "Restricted + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2097154,
+        "Permissions": [
+            "NormalUser",
+            "TournamentStaff"
+        ]
     },
     "Normal + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2097155,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "TournamentStaff"
+        ]
     },
     "Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2097156,
+        "Permissions": [
+            "TournamentStaff",
+            "Donor"
+        ]
     },
     "Pending + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 3145732,
+        "Permissions": [
+            "PendingVerify",
+            "TournamentStaff",
+            "Donor"
+        ]
     },
     "Restricted + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2097158,
+        "Permissions": [
+            "NormalUser",
+            "TournamentStaff",
+            "Donor"
+        ]
     },
     "Normal + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2097159,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "TournamentStaff"
+        ]
     },
     "Support Team": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 5013759,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ViewRAPLog",
+            "ChatMod",
+            "KickUsers",
+            "Caker"
+        ]
     },
     "Gestion Team": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 810533115,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "Caker",
+            "ManageClans",
+            "ViewIps"
+        ]
     },
     "BAT": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 25773998347,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageBeatmaps",
+            "PanelNominateAccept",
+            "PanelNominate",
+            "Caker"
+        ]
     },
     "Support Team + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 5013759,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "Donor",
+            "ViewRAPLog",
+            "ChatMod",
+            "KickUsers",
+            "Caker"
+        ]
     },
     "Gestion Team + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 810516735,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "Caker",
+            "ViewIps",
+            "ManageClans"
+        ]
     },
     "BAT + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 25769804047,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "ManageBeatmaps",
+            "Caker"
+        ]
     },
     "Support Team + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 2916603,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ViewRAPLog",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker"
+        ]
     },
     "Gestion Team + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 812630271,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker",
+            "ManageClans",
+            "ViewIps"
+        ]
     },
     "BAT + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 6291723,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageBeatmaps",
+            "Caker",
+            "TournamentStaff"
+        ]
     },
     "Support Team + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 7110911,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ViewRAPLog",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker"
+        ]
     },
     "Gestion Team + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 812630271,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker",
+            "ManageClans",
+            "ViewIps"
+        ]
     },
     "BAT + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 25776095503,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageBeatmaps",
+            "Caker",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "TournamentStaff"
+        ]
     },
     "BAT + Support Team": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 25774883323,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "ChatMod",
+            "KickUsers",
+            "Caker",
+            "PanelNominate",
+            "PanelNominateAccept"
+        ]
     },
     "BAT + Gestion Team": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 26580337147,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "PanelNominate",
+            "PanelNominateAccept"
+        ]
     },
     "BAT + Support Team + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 25774817535,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ViewRAPLog",
+            "ChatMod",
+            "KickUsers",
+            "Caker",
+            "PanelNominate",
+            "PanelNominateAccept"
+        ]
     },
     "BAT + Gestion Team + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 26583482879,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "PendingVerify",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "PanelNominate",
+            "PanelNominateAccept"
+        ]
     },
     "BAT + Support Team + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 51546718715,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ViewRAPLog",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker",
+            "PanelNominateAccept",
+            "PanelOverwatch"
+        ]
     },
     "BAT + Gestion Team + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 26582434299,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "PanelNominate",
+            "PanelNominateAccept"
+        ]
     },
     "BAT + Support Team + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 25776914943,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ViewRAPLog",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker",
+            "PanelNominateAccept",
+            "PanelNominate"
+        ]
     },
     "BAT + Gestion Team + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 26582434303,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "PanelNominateAccept",
+            "PanelNominate"
+        ]
     },
     "Developer": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 103889501707,
+        "Permissions": [
+            "PanelErrorLogs",
+            "PanelOverwatch",
+            "ViewIps",
+            "Caker",
+            "ManageClans",
+            "KickUsers",
+            "ManagePrivs",
+            "ViewRAPLog",
+            "ManageBadges",
+            "ManageDocs",
+            "ManageReports",
+            "ManageBetaKeys",
+            "ManageSettings",
+            "ManageServers",
+            "AccessRAP",
+            "NormalUser",
+            "PublicUser",
+            "SendAlerts"
+        ]
     },
     "Full Perms": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 136104116223,
+        "Permissions": [
+            "PanelErrorLogs",
+            "PanelOverwatch",
+            "PanelNominateAccept",
+            "PanelNominate",
+            "ViewTopScores",
+            "IsBot",
+            "ViewIps",
+            "ManageClans",
+            "Caker",
+            "TournamentStaff",
+            "KickUsers",
+            "ChatMod",
+            "SendAlerts",
+            "ManagePrivs",
+            "ViewRAPLog",
+            "ManageBadges",
+            "ManageDocs",
+            "ManageReports",
+            "ManageBetaKeys",
+            "ManageSettings",
+            "ManageServers",
+            "ManageBeatmaps",
+            "WipeUsers",
+            "SilenceUsers",
+            "BanUsers",
+            "ManageUsers",
+            "AccessRAP",
+            "NormalUser",
+            "PublicUser"
+        ]
     },
     "Full Perms + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 136104116223,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ManageServers",
+            "ManageSettings",
+            "ManageBetaKeys",
+            "ManageReports",
+            "ManageDocs",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "TournamentStaff",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "IsBot",
+            "ViewTopScores",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "PanelErrorLogs",
+            "PanelOverwatch"
+        ]
     },
     "Developer + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 133954273039,
+        "Permissions": [
+            "Donor",
+            "NormalUser",
+            "PublicUser",
+            "AccessRAP",
+            "ManageBeatmaps",
+            "ManageServers",
+            "ManageSettings",
+            "ManageBetaKeys",
+            "ManageReports",
+            "ManageDocs",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "KickUsers",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "ViewTopScores",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "PanelOverwatch",
+            "PanelErrorLogs"
+        ]
     },
     "Developer + BAT": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 133954076427,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageBeatmaps",
+            "ManageServers",
+            "ManageSettings",
+            "ManageBetaKeys",
+            "ManageReports",
+            "ManageDocs",
+            "ManageBadges",
+            "ViewRAPLog",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "ViewTopScores",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "PanelOverwatch",
+            "PanelErrorLogs",
+            "KickUsers"
+        ]
     },
     "Developer + BAT + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 133954273167,
+        "Permissions": [
+            "Donor",
+            "NormalUser",
+            "PublicUser",
+            "AccessRAP",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ManageServers",
+            "ManageSettings",
+            "ManageBetaKeys",
+            "ManageReports",
+            "ManageDocs",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "KickUsers",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "ViewTopScores",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "PanelOverwatch",
+            "PanelErrorLogs"
+        ]
     },
     "Developer + Support Team": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 133686099963,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "AccessRAP",
+            "ManageUsers",
+            "BanUsers",
+            "SilenceUsers",
+            "WipeUsers",
+            "ManageBeatmaps",
+            "ManageServers",
+            "ManageSettings",
+            "ManageBetaKeys",
+            "ManageReports",
+            "ManageDocs",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "Caker",
+            "ViewIps",
+            "ViewTopScores",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "PanelOverwatch",
+            "PanelErrorLogs"
+        ]
     },
     "Developer + Support Team + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Gestion Team": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Gestion Team + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Support Team + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Support Team + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Gestion Team + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + BAT + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + BAT + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Support Team + BAT": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Support Team + BAT + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Gestion Team + BAT": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Gestion Team + BAT + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Support Team + BAT + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Support Team + BAT + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Gestion Team + BAT + Tournament Staff": {
-        "Value": 0,
-        "Permissions": []
-    },
-    "Developer + Gestion Team + BAT + Tournament Staff + Donor": {
-        "Value": 0,
-        "Permissions": []
+        "Value": 133954535423,
+        "Permissions": [
+            "PublicUser",
+            "NormalUser",
+            "Donor",
+            "AccessRAP",
+            "ManageUsers",
+            "SilenceUsers",
+            "ManageBeatmaps",
+            "ManageServers",
+            "ManageSettings",
+            "ManageBetaKeys",
+            "ManageReports",
+            "ManageDocs",
+            "ManageBadges",
+            "ViewRAPLog",
+            "ManagePrivs",
+            "SendAlerts",
+            "ChatMod",
+            "KickUsers",
+            "Caker",
+            "ManageClans",
+            "ViewIps",
+            "ViewTopScores",
+            "PanelNominate",
+            "PanelNominateAccept",
+            "PanelOverwatch",
+            "PanelErrorLogs",
+            "WipeUsers",
+            "BanUsers"
+        ]
     }
 }
