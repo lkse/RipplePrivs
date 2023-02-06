@@ -1,5 +1,9 @@
-# Privliges. yay...
-# bitwise enumeration for lists of privliges in ripple, essentially for the creation of permission groups
+# Refined By: lk#2707
+# Description: Ripple Privileges Class & Helper Functions.
+# Last Updated: 2023-05-02
+# Thanks to Ripple and Realistik for being the main "motivators" for this.
+# includes RealistikPanel Specific Priviliges. 
+
 
 
 from enum import IntFlag # thing for class
@@ -40,34 +44,21 @@ class Privileges(IntFlag):
     PanelNominateAccept = 2 << 33
     PanelOverwatch      = 2 << 34
     PanelErrorLogs      = 2 << 35
-
-# Bitwise enumerations are powers of 2, so they're expressed in binary.
-# when we combine them, we can use this to decipher if a user has privliges, from just one number, which, is easy(er) then a giant list.
-
-# this is a undertaking i was not willing to do. several days will be spent on this
-
-# for further refrence, we add a privlige to a int type var by;
-# var |= Privileges.priv
-# and to see if a privlige is in a var, we do;
-# var & Privileges.priv
     
 def getprivfromint(privint):
-    # Get a list of privs from an integer
     privs = [priv.name for priv in Privileges if privint & priv]
     if len(privs) == 0:
         raise ValueError("No Privileges")
     return privs
 
 def getintfrompriv(privs):
-    # Get an integer from a list of privs
     privint = 0
-    # Convert the list of privs to a list of Privileges
     privs = [Privileges[priv] for priv in privs]
     for priv in privs:
         privint |= priv.value
     return privint
 
-def setprivgroups(): # only for creating groups in permissions.json
+def setprivgroups(): # ONLY LOCAL
     # get permissions.json
     with open("permissions.json", "r") as jsonfile:
         permissions = json.load(jsonfile)
@@ -91,17 +82,3 @@ def setprivgroups(): # only for creating groups in permissions.json
         with open("permissions.json", "w") as f:
             json.dump(perm, f, indent=4)
 
-def createQuery(): # only for creating query for pushing json to db
-    # create a query for pushing json to db
-    with open("permissions.json", "r") as f:
-        j = json.load(f)
-        # delete everything from privileges_groups_new
-        query = "DELETE FROM privileges_groups_new;\n"
-        for group in j.keys():
-            query += "INSERT INTO privileges_groups_new (name, privileges, color) VALUES ('{}', {}, 'default');\n".format(group, str(j[group]["Value"]))
-        
-        print(query)
-
-
-
-  
