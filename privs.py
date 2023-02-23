@@ -82,3 +82,14 @@ def setprivgroups(): # ONLY LOCAL
         with open("permissions.json", "w") as f:
             json.dump(perm, f, indent=4)
 
+def makequery():
+    # get permissions.json
+    with open("permissions.json", "r") as jsonfile:
+        permissions = json.load(jsonfile)
+    permissions = list(permissions.keys())
+    for group in permissions:
+        with open("permissions.json", "r") as f:
+            perm = json.load(f)
+            value = perm[group]["Value"]
+            print(f"INSERT INTO `privileges_groups` (`id`, `name`, `privileges`, `color`) VALUES ('','{group}','{value}', '');\n")
+makequery()
